@@ -1,0 +1,185 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('C:/Users/Dell/Desktop/pp/ScoreBoard/bdmt.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+.webname h1{
+  color: #f1f8f4;
+  font-style: bold;
+  font-size: 60px;
+  position:fixed;
+  left:0px;
+  border-bottom: 1px solid rgb(253, 250, 250);
+border-bottom-left-radius: 100%;
+padding-bottom: 5px;
+}
+.container {
+  display: flex;
+  position: fixed;
+  right: 800px;
+  bottom: 300px;
+}
+#p1{
+  font-size: 40px;
+  font-weight: bold;
+  color: blue;
+  border-bottom: 1px solid black;
+}
+.card-body {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+}
+.card-body title{
+    color: #009432;
+    background-color: #009432;
+}
+.card-body h1 {
+  margin-bottom: 15px;
+  font-size: 70px;
+}
+
+.card-btn button {
+  border-radius: 5px;
+  color: #262626;
+  padding: 10px 35px;
+  border: 0;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+button#decrement {
+  background: #f6e58d;
+}
+button#decrement:hover {
+  background: #f79f1f;
+  color: #fff;
+}
+button#reset {
+  background: #f3a683;
+}
+button#reset:hover {
+  background: #ea2027;
+  color: #fff;
+}
+button#increment {
+  background: #c4e538;
+}
+button#increment:hover {
+  background: #009432;
+  color: #fff;
+}
+
+.container1 {
+  display: flex;
+  position: fixed;
+  right: 70px;
+  bottom: 300px;
+}
+
+.card-body1 {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+}
+.card-body1 title1{
+    color: #009432;
+    background-color: #009432;
+}
+.card-body1 h1 {
+  margin-bottom: 15px;
+  font-size: 70px;
+}
+.card-btn1 button {
+  border-radius: 5px;
+  color: #262626;
+  padding: 10px 35px;
+  border: 0;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+button#decrement1 {
+  background: #f6e58d;
+}
+button#decrement1:hover {
+  background: #f79f1f;
+  color: #fff;
+}
+button#reset1 {
+  background: #f3a683;
+}
+button#reset1:hover {
+  background: #ea2027;
+  color: #fff;
+}
+button#increment1 {
+  background: #c4e538;
+}
+button#increment1:hover {
+  background: #009432;
+  color: #fff;
+}
+
+button#gameoverbtn{
+      padding: 15px 25px;
+      background-color: hsl(2, 81%, 43%);
+      
+      color: #f1f8f4;
+      border-radius:20px ;
+      
+      position: fixed;
+      right:625px;
+      bottom: 200px;
+      box-shadow:2px 2px 0 #da1117;
+      transition: transform 0.2s, box-shadow 0.2s;
+      
+}
+button#gameoverbtn:active{
+  transform: translateX(4px) translateY(4px);
+box-shadow: 0 0 0 #da1117;
+}
+
+/* winner html file animation */
+
+
+
+
+.winner-animation h1 {
+  position: fixed;
+  right: 15px;
+  bottom: 300px;
+  font-size: 80px;
+  font-weight: bold;
+  animation: winnerAnimation 1s alternate infinite;
+}
+
+@keyframes winnerAnimation {
+  0% {
+    color: #0059ff; /* Starting color */
+  }
+  100% {
+    color: #00ff55; /* Ending color */
+  }
+}
